@@ -696,7 +696,7 @@ export default function MasteryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <CheckoutButton productId="3" productName="Mastery Program" price={397} />
           </div>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-200">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-700 font-medium">
             <span>✓ 22 complete resources</span>
             <span>✓ Direct 1-on-1 support now</span>
             <span>✓ Founding member status</span>

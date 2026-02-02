@@ -60,19 +60,19 @@ export default function TheManualPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
               <div className="text-2xl font-bold !text-black">156</div>
-              <div className="text-sm text-gray-200">Pages</div>
+              <div className="text-sm text-gray-700 font-medium">Pages</div>
             </div>
             <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
               <div className="text-2xl font-bold !text-black">10</div>
-              <div className="text-sm text-gray-200">Chapters</div>
+              <div className="text-sm text-gray-700 font-medium">Chapters</div>
             </div>
             <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
               <div className="text-2xl font-bold !text-black">45</div>
-              <div className="text-sm text-gray-200">Templates</div>
+              <div className="text-sm text-gray-700 font-medium">Templates</div>
             </div>
             <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
               <div className="text-2xl font-bold !text-black">∞</div>
-              <div className="text-sm text-gray-200">Updates</div>
+              <div className="text-sm text-gray-700 font-medium">Updates</div>
             </div>
           </div>
         </div>
