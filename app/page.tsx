@@ -1152,7 +1152,7 @@ export default function LandingPage() {
               Everything you need to know before getting started
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {[
                 {
                   q: "I have no money to start. Can I still do this?",
@@ -1195,10 +1195,10 @@ export default function LandingPage() {
                   a: "Email support is included with all packages. Mastery members get priority 24-hour response times plus access to the private Discord community where you can get help from me and other successful students. The course is designed to be self-contained with clear action steps, but if you're stuck, we're here to help. Most questions are answered in the comprehensive troubleshooting section of the manual."
                 }
               ].map((faq, i) => (
-                <Card key={i}>
+                <Card key={i} className="border-l-4 border-l-blue-600">
                   <CardContent className="pt-6">
-                    <h3 className="text-lg font-bold mb-2">{faq.q}</h3>
-                    <p className="text-muted-foreground">{faq.a}</p>
+                    <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.q}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
                   </CardContent>
                 </Card>
               ))}
