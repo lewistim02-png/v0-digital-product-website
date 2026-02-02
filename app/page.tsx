@@ -238,8 +238,29 @@ export default function LandingPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-bold mb-2">Course Dashboard</h3>
                   <p className="text-muted-foreground mb-4">Clean, organized access to all materials</p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                    <span className="text-gray-400">[Dashboard Preview]</span>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg h-48 p-4 border-2 border-gray-200 overflow-hidden">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-8 h-8 bg-black rounded flex items-center justify-center text-white font-bold text-sm">KA</div>
+                      <div className="text-xs font-semibold text-gray-700">KICKCARD ACADEMY</div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="bg-white rounded p-2 border border-gray-300 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <span className="text-xs font-medium text-gray-800">The Manual (156 pages)</span>
+                      </div>
+                      <div className="bg-white rounded p-2 border border-gray-300 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <span className="text-xs font-medium text-gray-800">Supplier List (12 contacts)</span>
+                      </div>
+                      <div className="bg-white rounded p-2 border border-gray-300 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                        <span className="text-xs font-medium text-gray-800">Pricing Calculator</span>
+                      </div>
+                      <div className="bg-white rounded p-2 border border-gray-300 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                        <span className="text-xs font-medium text-gray-800">Authentication Checklist</span>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -248,8 +269,31 @@ export default function LandingPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-bold mb-2">Supplier Contact List</h3>
                   <p className="text-muted-foreground mb-4">12+ verified suppliers with intro templates</p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                    <span className="text-gray-400">[Supplier List Preview]</span>
+                  <div className="bg-white rounded-lg h-48 p-3 border-2 border-gray-200 overflow-hidden">
+                    <div className="text-xs font-bold text-gray-800 mb-2 pb-1 border-b border-gray-300">VERIFIED UK SUPPLIERS</div>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center justify-between p-1.5 bg-gray-50 rounded text-xs">
+                        <span className="font-medium text-gray-800">StockX UK</span>
+                        <span className="text-green-600 font-semibold">✓ Verified</span>
+                      </div>
+                      <div className="flex items-center justify-between p-1.5 bg-gray-50 rounded text-xs">
+                        <span className="font-medium text-gray-800">GOAT</span>
+                        <span className="text-green-600 font-semibold">✓ Verified</span>
+                      </div>
+                      <div className="flex items-center justify-between p-1.5 bg-gray-50 rounded text-xs">
+                        <span className="font-medium text-gray-800">eBay Vault</span>
+                        <span className="text-green-600 font-semibold">✓ Verified</span>
+                      </div>
+                      <div className="flex items-center justify-between p-1.5 bg-gray-50 rounded text-xs">
+                        <span className="font-medium text-gray-800">Vinted Pro</span>
+                        <span className="text-green-600 font-semibold">✓ Verified</span>
+                      </div>
+                      <div className="flex items-center justify-between p-1.5 bg-gray-50 rounded text-xs">
+                        <span className="font-medium text-gray-800">Depop Business</span>
+                        <span className="text-green-600 font-semibold">✓ Verified</span>
+                      </div>
+                      <div className="text-center text-xs text-gray-500 mt-2 pt-2 border-t border-gray-200">+ 7 more suppliers with templates</div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -259,8 +303,33 @@ export default function LandingPage() {
                   <h3 className="text-xl font-bold mb-2">Pricing Calculator</h3>
                   <p className="text-muted-foreground mb-2">Live spreadsheet managing 200+ listings</p>
                   <p className="text-sm text-muted-foreground mb-4">Excel template with formulas</p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                    <span className="text-gray-400">[Calculator Preview]</span>
+                  <div className="bg-white rounded-lg h-48 p-2 border-2 border-gray-200 overflow-hidden">
+                    <div className="grid grid-cols-4 gap-px bg-gray-300 text-xs">
+                      <div className="bg-green-600 text-white font-bold p-1.5 text-center">Item</div>
+                      <div className="bg-green-600 text-white font-bold p-1.5 text-center">Buy £</div>
+                      <div className="bg-green-600 text-white font-bold p-1.5 text-center">Sell £</div>
+                      <div className="bg-green-600 text-white font-bold p-1.5 text-center">Profit</div>
+                      
+                      <div className="bg-white p-1.5 text-gray-800 font-medium">Jordan 1 High</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£120</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£185</div>
+                      <div className="bg-green-50 p-1.5 text-green-700 font-bold text-center">£65</div>
+                      
+                      <div className="bg-white p-1.5 text-gray-800 font-medium">Dunk Low</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£85</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£135</div>
+                      <div className="bg-green-50 p-1.5 text-green-700 font-bold text-center">£50</div>
+                      
+                      <div className="bg-white p-1.5 text-gray-800 font-medium">Yeezy 350</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£180</div>
+                      <div className="bg-white p-1.5 text-gray-700 text-center">£265</div>
+                      <div className="bg-green-50 p-1.5 text-green-700 font-bold text-center">£85</div>
+                      
+                      <div className="bg-gray-800 text-white font-bold p-1.5">TOTAL</div>
+                      <div className="bg-gray-100 p-1.5 text-gray-700 font-bold text-center">£385</div>
+                      <div className="bg-gray-100 p-1.5 text-gray-700 font-bold text-center">£585</div>
+                      <div className="bg-green-600 text-white font-bold p-1.5 text-center">£200</div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -270,8 +339,35 @@ export default function LandingPage() {
                   <h3 className="text-xl font-bold mb-2">Authentication Checklist</h3>
                   <p className="text-muted-foreground mb-2">47-point verification system</p>
                   <p className="text-sm text-muted-foreground mb-4">Printable PDF checklist</p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                    <span className="text-gray-400">[Checklist Preview]</span>
+                  <div className="bg-white rounded-lg h-48 p-3 border-2 border-gray-200 overflow-hidden">
+                    <div className="text-xs font-bold text-gray-800 mb-2 pb-1 border-b border-gray-300">47-POINT AUTHENTICATION SYSTEM</div>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" checked readOnly className="w-3 h-3" />
+                        <span className="text-gray-800 font-medium">Check box label and condition</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" checked readOnly className="w-3 h-3" />
+                        <span className="text-gray-800 font-medium">Verify stitching quality and pattern</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" checked readOnly className="w-3 h-3" />
+                        <span className="text-gray-800 font-medium">Inspect materials and texture</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" readOnly className="w-3 h-3" />
+                        <span className="text-gray-600">Compare with reference images</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" readOnly className="w-3 h-3" />
+                        <span className="text-gray-600">Check serial numbers and tags</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <input type="checkbox" readOnly className="w-3 h-3" />
+                        <span className="text-gray-600">Validate packaging authenticity</span>
+                      </div>
+                      <div className="text-center text-xs text-gray-500 mt-2 pt-2 border-t border-gray-200">+ 41 more verification points</div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -281,8 +377,30 @@ export default function LandingPage() {
                   <h3 className="text-xl font-bold mb-2">AI Automation Setup</h3>
                   <p className="text-muted-foreground mb-2">Save 18 hours/month on listing creation</p>
                   <p className="text-sm text-muted-foreground mb-4">Step-by-step automation guide</p>
-                  <div className="bg-gray-100 rounded-lg h-48 flex items-center justify-center">
-                    <span className="text-gray-400">[Automation Guide Preview]</span>
+                  <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-lg h-48 p-4 border-2 border-purple-200 overflow-hidden">
+                    <div className="text-xs font-bold text-purple-900 mb-3">AI LISTING AUTOMATION - 5 STEPS</div>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <div className="w-5 h-5 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">1</div>
+                        <div className="text-xs text-gray-800"><span className="font-semibold">Setup:</span> Connect your platforms</div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <div className="w-5 h-5 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">2</div>
+                        <div className="text-xs text-gray-800"><span className="font-semibold">Templates:</span> Import listing templates</div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <div className="w-5 h-5 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">3</div>
+                        <div className="text-xs text-gray-800"><span className="font-semibold">AI Config:</span> Set up auto-descriptions</div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <div className="w-5 h-5 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">4</div>
+                        <div className="text-xs text-gray-800"><span className="font-semibold">Test:</span> Run first automated listing</div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <div className="w-5 h-5 bg-purple-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">5</div>
+                        <div className="text-xs text-gray-800"><span className="font-semibold">Scale:</span> Automate 200+ listings/month</div>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
