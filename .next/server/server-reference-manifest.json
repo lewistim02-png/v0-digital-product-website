@@ -1,0 +1,42 @@
+{
+  "node": {
+    "60a6470addbdc6c94857d6831045322a5b65da6ecd": {
+      "workers": {
+        "app/courses/mastery/page": {
+          "moduleId": 5661,
+          "async": false,
+          "exportedName": "createCheckoutSession",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/courses/the-guides/page": {
+          "moduleId": 99936,
+          "async": false,
+          "exportedName": "createCheckoutSession",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/courses/the-lite/page": {
+          "moduleId": 37920,
+          "async": false,
+          "exportedName": "createCheckoutSession",
+          "filename": "app/actions/checkout.ts"
+        },
+        "app/courses/the-manual/page": {
+          "moduleId": 11622,
+          "async": false,
+          "exportedName": "createCheckoutSession",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "layer": {
+        "app/courses/mastery/page": "action-browser",
+        "app/courses/the-guides/page": "action-browser",
+        "app/courses/the-lite/page": "action-browser",
+        "app/courses/the-manual/page": "action-browser"
+      },
+      "filename": "app/actions/checkout.ts",
+      "exportedName": "createCheckoutSession"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "nfqu1cViqeUep9tPvRTd8h9m+ZQjgLejikJ8z+sGQLI="
+}

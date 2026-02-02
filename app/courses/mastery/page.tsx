@@ -76,7 +76,7 @@ export default function MasteryPage() {
             {/* The Manual */}
             <div className="bg-white border-4 border-gray-300 p-6 shadow-[8px_8px_0px_0px_rgba(156,163,175,1)] relative opacity-90">
               <h3 className="text-xl font-bold text-black mb-2">The Manual</h3>
-              <div className="text-3xl font-bold text-black mb-4">£97</div>
+              <div className="text-3xl font-bold text-black mb-4">£397</div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">✓</span>
@@ -102,7 +102,7 @@ export default function MasteryPage() {
             {/* The Guides */}
             <div className="bg-white border-4 border-gray-300 p-6 shadow-[8px_8px_0px_0px_rgba(156,163,175,1)] relative opacity-90">
               <h3 className="text-xl font-bold text-black mb-2">The Guides</h3>
-              <div className="text-3xl font-bold text-black mb-4">£197</div>
+              <div className="text-3xl font-bold text-black mb-4">£397</div>
               <ul className="space-y-2 text-sm mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">✓</span>
@@ -542,8 +542,8 @@ export default function MasteryPage() {
 
                 <tr className="border-t-2 font-semibold">
                   <td className="p-4 text-black">Price</td>
-                  <td className="text-center p-4 text-black">£97</td>
-                  <td className="text-center p-4 text-black">£197</td>
+                  <td className="text-center p-4 text-black">£397</td>
+                  <td className="text-center p-4 text-black">£397</td>
                   <td className="text-center p-4 bg-red-50 dark:bg-red-950/20 text-black">£397</td>
                 </tr>
               </tbody>

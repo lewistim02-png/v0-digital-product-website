@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60a6470addbdc6c94857d6831045322a5b65da6ecd": {
+      "workers": {
+        "app/courses/the-guides/page": {
+          "moduleId": 99936,
+          "async": false,
+          "exportedName": "createCheckoutSession",
+          "filename": "app/actions/checkout.ts"
+        }
+      },
+      "layer": {
+        "app/courses/the-guides/page": "action-browser"
+      },
+      "exportedName": "createCheckoutSession",
+      "filename": "app/actions/checkout.ts"
+    }
+  },
+  "edge": {}
+}
