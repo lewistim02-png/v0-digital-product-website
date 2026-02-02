@@ -1,0 +1,627 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import {
+  CheckCircle2,
+  BookOpen,
+  TrendingUp,
+  Shield,
+  Camera,
+  Calculator,
+  Globe,
+  Bot,
+  Wallet,
+  ChevronRight,
+} from "lucide-react"
+import Link from "next/link"
+import { CheckoutButton } from "@/components/checkout-button"
+import type { Metadata } from "next"
+import { CourseSchema } from "@/components/course-schema"
+
+export const metadata: Metadata = {
+  title: "The Guides - Advanced Reselling Mastery | Kickcard Academy",
+  description: "The Manual + 7 specialized guides covering authentication, photography, AI tools, and more. £197.",
+  openGraph: {
+    title: "The Guides - Complete Reselling Mastery Package",
+    description: "The Manual + 7 advanced guides for professional resellers.",
+    type: "website",
+  },
+}
+
+export default function TheGuidesPage() {
+  const guides = [
+    {
+      icon: Shield,
+      title: "Sneaker Authentication Guide",
+      description: "Master the art of spotting fakes with professional authentication techniques",
+      chapters: [
+        "Understanding the Fake Market",
+        "Your Authentication Toolkit",
+        "Jordan Authentication Mastery",
+        "Nike, Adidas & New Balance Deep Dives",
+        "Advanced Authentication Techniques",
+        "Building Authentication Confidence",
+      ],
+    },
+    {
+      icon: Shield,
+      title: "Trading Card Authentication Guide",
+      description: "Comprehensive authentication for Pokemon, Yu-Gi-Oh!, and Magic: The Gathering",
+      chapters: [
+        "Understanding the Fake Card Landscape",
+        "Your Card Authentication Arsenal",
+        "Pokemon Card Authentication Mastery",
+        "Yu-Gi-Oh! Card Authentication",
+        "Magic: The Gathering Authentication",
+        "Advanced Authentication Techniques",
+      ],
+    },
+    {
+      icon: Camera,
+      title: "Photography & Listing Optimization",
+      description: "Create professional listings that sell faster and for higher prices",
+      chapters: [
+        "Understanding Buyer Psychology",
+        "The 12-Shot Sneaker Formula",
+        "The 8-Shot Card Formula",
+        "Essential Equipment Setup",
+        "Lighting Mastery",
+        "Platform-Specific Optimization",
+        "Writing Compelling Descriptions",
+        "Pricing Psychology",
+      ],
+    },
+    {
+      icon: Calculator,
+      title: "Financial Management Guide",
+      description: "Master the money side of reselling with professional financial systems",
+      chapters: [
+        "Understanding Reselling Cash Flow",
+        "Building Your Financial Tracking System",
+        "Understanding Your Real Profit Margins",
+        "Cash Flow Planning and Management",
+        "Tax Planning and Optimization",
+        "Business Structure Considerations",
+        "Investment and Growth Planning",
+      ],
+    },
+    {
+      icon: Globe,
+      title: "International Importing Guide",
+      description: "Navigate post-Brexit importing and source globally with confidence",
+      chapters: [
+        "The Post-Brexit Reality",
+        "Understanding the New Thresholds",
+        "EU Import Cost Breakdown",
+        "Japan Import Analysis",
+        "US Import Considerations",
+        "Calculating True Profitability",
+        "Shipping Partner Selection",
+      ],
+    },
+    {
+      icon: Bot,
+      title: "The AI Reseller's Playbook",
+      description: "Leverage AI tools to automate sourcing, authentication, and customer service",
+      chapters: [
+        "The Sourcing Revolution",
+        "Authentication on Steroids",
+        "Pricing Like a Data Scientist",
+        "Content Creation That Converts",
+        "Customer Service That Scales",
+        "Building Your Realistic AI Workflow",
+        "The Real Numbers (Honest Results)",
+      ],
+    },
+    {
+      icon: Wallet,
+      title: "The Broke Sneakerhead's Guide",
+      description: "Start with £50-£200 and build a profitable reselling business",
+      chapters: [
+        "The £50 Challenge: Prove You're Not Delusional",
+        "The £100 Strategy: Building Your Empire",
+        "The £200 Strategy: Getting Serious",
+        "Budget Sourcing Secrets",
+        "Common Ways to Go Broke Fast",
+        "When You're Ready to Scale Up",
+      ],
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-white pb-32">
+      <nav className="bg-white border-b-2 border-black px-4 py-3">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-2 text-sm">
+            <Link href="/" className="text-gray-700 hover:text-black font-medium">
+              Home
+            </Link>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Link href="/" className="text-gray-700 hover:text-black font-medium">
+              Courses
+            </Link>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <span className="text-black font-bold">The Guides</span>
+          </div>
+        </div>
+      </nav>
+
+      <CourseSchema
+        name="The Guides - Advanced Reselling Mastery + Authentication"
+        description="The Manual + 7 specialized guides covering authentication, photography, financial management, AI tools, and international importing."
+        price="197"
+        currency="GBP"
+        rating="4.9"
+        reviewCount="183"
+      />
+
+      <section className="bg-white !text-black py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="mb-6">
+            <span className="inline-block bg-red-500 text-black px-4 py-2 text-sm font-bold uppercase border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+              Professional Package
+            </span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 !!text-black">The Guides</h1>
+          <p className="text-xl !text-black mb-8">
+            Everything in The Manual + 7 comprehensive specialist guides covering authentication, photography, AI tools,
+            and advanced strategies
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
+              <div className="text-2xl font-bold !text-black">8</div>
+              <div className="text-sm !text-black">Resources</div>
+            </div>
+            <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
+              <div className="text-2xl font-bold !text-black">600+</div>
+              <div className="text-sm !text-black">Pages</div>
+            </div>
+            <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
+              <div className="text-2xl font-bold !text-black">Pro</div>
+              <div className="text-sm !text-black">Level</div>
+            </div>
+            <div className="bg-gray-50 border-2 border-gray-700 p-4 text-center">
+              <div className="text-2xl font-bold !text-black">∞</div>
+              <div className="text-sm !text-black">Updates</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 px-4 bg-red-50 border-y-4 border-red-200">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-2xl font-bold text-center mb-8 text-black">Choose Your Package</h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* The Manual */}
+            <div className="bg-white border-4 border-gray-300 p-6 shadow-[8px_8px_0px_0px_rgba(156,163,175,1)] relative opacity-90">
+              <h3 className="text-xl font-bold text-black mb-2">The Manual</h3>
+              <div className="text-3xl font-bold text-black mb-4">£97</div>
+              <ul className="space-y-2 text-sm text-gray-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <span className="text-black">156-page foundation manual</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <span className="text-black">45 templates</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gray-400">✗</span>
+                  <span className="text-gray-500">Specialist guides</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gray-400">✗</span>
+                  <span className="text-gray-500">Authentication mastery</span>
+                </li>
+              </ul>
+              <Link
+                href="/courses/the-manual"
+                className="block text-center bg-gray-200 text-gray-700 py-3 font-bold border-2 border-gray-400 hover:bg-gray-300 transition"
+              >
+                View Manual
+              </Link>
+            </div>
+
+            {/* The Guides - Current */}
+            <div className="bg-white border-4 border-red-500 p-6 shadow-[8px_8px_0px_0px_rgba(239,68,68,1)] relative transform md:scale-105">
+              <div className="absolute -top-3 left-4 bg-green-500 !text-black px-3 py-1 text-xs font-bold uppercase border-2 border-black">
+                You're Here
+              </div>
+              <h3 className="text-xl font-bold text-black mb-2">The Guides</h3>
+              <div className="text-3xl font-bold text-red-500 mb-4">£197</div>
+              <ul className="space-y-2 text-sm mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <span className="text-black font-semibold">Everything in Manual</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <span className="text-black">7 specialist guides (600+ pages)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 font-bold">✓</span>
+                  <span className="text-black">Authentication mastery</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gray-400">✗</span>
+                  <span className="text-gray-500">Community & coaching</span>
+                </li>
+              </ul>
+              <div className="text-center text-sm text-gray-600">Current Selection</div>
+            </div>
+
+            {/* Mastery - Upgrade Option */}
+            <div className="bg-white !text-black p-6 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative">
+              <div className="absolute -top-3 left-4 bg-yellow-400 text-black px-3 py-1 text-xs font-bold uppercase border-2 border-black">
+                Best Value
+              </div>
+              <h3 className="text-xl font-bold mb-2 !text-black">Mastery</h3>
+              <div className="text-3xl font-bold !text-black mb-4">£397</div>
+              <ul className="space-y-2 text-sm mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="!text-black font-bold">✓</span>
+                  <span className="font-semibold !text-black">Everything in Guides</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="!text-black font-bold">✓</span>
+                  <span className="!text-black">Private Discord community</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="!text-black font-bold">✓</span>
+                  <span className="!text-black">Weekly live Q&A</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="!text-black font-bold">✓</span>
+                  <span className="!text-black">1-on-1 coaching calls</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="!text-black font-bold">✓</span>
+                  <span className="!text-black">Priority support</span>
+                </li>
+              </ul>
+              <Link
+                href="/courses/mastery"
+                className="block text-center bg-yellow-400 text-black py-3 font-bold border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] transition-all"
+              >
+                Upgrade to Mastery →
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-center text-sm text-gray-700 mt-8 font-medium">
+            💡 Save £200 by upgrading to Mastery now instead of later
+          </p>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground dark:!text-black">
+              What's Included
+            </h2>
+            <p className="text-lg text-muted-foreground dark:!text-black/80">
+              The complete foundation plus advanced specialization guides
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <Card className="border-2 border-primary">
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <BookOpen className="h-4 w-4 !text-black" />
+                  </div>
+                  <Badge className="bg-red-500 text-black">Foundation</Badge>
+                </div>
+                <CardTitle>The Manual (All 10 Chapters)</CardTitle>
+                <CardDescription>
+                  The complete reselling foundation covering sourcing, platforms, pricing, and scaling
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {[
+                    "The Real Game (Mindset & Reality)",
+                    "Finding Your First Wins",
+                    "Platform Mastery",
+                    "Pricing Psychology",
+                    "Building Your Brand",
+                    "Scaling Operations",
+                    "Advanced Strategies",
+                    "Legal & Tax Essentials",
+                    "Long-Term Sustainability",
+                    "The Next Level",
+                  ].map((chapter, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <CheckCircle2 className="h-4 w-4 !text-black" />
+                      </div>
+                      <span className="text-sm">
+                        {chapter}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary">
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="h-4 w-4 !text-black" />
+                  </div>
+                  <Badge className="bg-gray-700 !text-black">Advanced</Badge>
+                </div>
+                <CardTitle>7 Specialized Guides</CardTitle>
+                <CardDescription>
+                  Deep-dive guides for mastering specific aspects of reselling
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {[
+                    "Sneaker Authentication Guide",
+                    "Trading Card Authentication Guide",
+                    "Photography & Listing Optimization",
+                    "Financial Management Guide",
+                    "International Importing Guide",
+                    "The AI Reseller's Playbook",
+                    "The Broke Sneakerhead's Guide",
+                  ].map((guide, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <CheckCircle2 className="h-4 w-4 !text-black" />
+                      </div>
+                      <span className="text-sm">
+                        {guide}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Full Curriculum */}
+      <section id="curriculum" className="container mx-auto px-4 py-16 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground dark:!text-black">
+              Complete Curriculum
+            </h2>
+            <p className="text-lg text-muted-foreground dark:!text-black/80">
+              Detailed breakdown of all 7 specialized guides
+            </p>
+          </div>
+
+          <div className="grid gap-6">
+            {guides.map((guide, index) => {
+              const Icon = guide.icon
+              return (
+                <Card key={index}>
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 !text-black" />
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="text-xl mb-2">
+                          {guide.title}
+                        </CardTitle>
+                        <CardDescription className="text-base">
+                          {guide.description}
+                        </CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid sm:grid-cols-2 gap-3">
+                      {guide.chapters.map((chapter, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <CheckCircle2 className="h-4 w-4 !text-black" />
+                          </div>
+                          <span className="text-sm">
+                            {chapter}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Sample Content Preview */}
+      <section className="container mx-auto px-4 py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 !text-black">
+              Sample Content
+            </h2>
+            <p className="text-lg !text-black/80">
+              Get a taste of the quality and depth you'll receive
+            </p>
+          </div>
+
+          <Card className="border-2">
+            <CardHeader>
+              <CardTitle>From: The AI Reseller's Playbook</CardTitle>
+              <CardDescription>Chapter 1: The Sourcing Revolution</CardDescription>
+            </CardHeader>
+            <CardContent className="prose prose-sm max-w-none">
+              <h3 className="text-lg font-semibold mb-3">
+                Discord Bots + Cook Groups: Your Intelligence Network
+              </h3>
+              <p className="mb-4">
+                The real game-changer isn't a single app—it's the intelligence networks. Notify (£50/month) and
+                Endurance (£35/month) are the two cook groups actually worth paying for. Their Discord bots monitor
+                every major sneaker site for restocks, price drops across platforms, early links before public releases,
+                and stock levels and size runs.
+              </p>
+              <div className="bg-white/10 p-4 rounded-lg mb-4">
+                <p className="font-medium mb-2">
+                  Real example:
+                </p>
+                <p className="text-sm">
+                  Notify's bot caught a Size? restock of Dunk Low Pandas at 3 am. Bought 4 pairs at retail (£90 each),
+                  sold all within a week at £140+ each. Made £200 profit while sleeping.
+                </p>
+              </div>
+              <p className="text-sm italic" style={{ color: "#9ca3af" }}>
+                This is just one excerpt from 11 comprehensive chapters covering AI tools, automation, and real ROI
+                calculations...
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Who This Is For */}
+      <section className="container mx-auto px-4 py-16 bg-muted/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground dark:!text-black">Who This Is For</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Perfect If You...</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="h-4 w-4 !text-black" />
+                    </div>
+                    <span>Want to master authentication and never worry about fakes</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="h-4 w-4 !text-black" />
+                    </div>
+                    <span>Need professional photography and listing skills</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="h-4 w-4 !text-black" />
+                    </div>
+                    <span>Want to understand the financial side properly</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="h-4 w-4 !text-black" />
+                    </div>
+                    <span>Are ready to leverage AI and automation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="h-4 w-4 !text-black" />
+                    </div>
+                    <span>Want to source internationally with confidence</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Not Right If You...</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="!text-black font-bold text-sm">✗</span>
+                    </div>
+                    <span>Haven't read The Manual yet (start there first)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="!text-black font-bold text-sm">✗</span>
+                    </div>
+                    <span>Want quick money without learning systems</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="!text-black font-bold text-sm">✗</span>
+                    </div>
+                    <span>Aren't willing to invest in tools and education</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="!text-black font-bold text-sm">✗</span>
+                    </div>
+                    <span>Just want surface-level tips and tricks</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section id="purchase" className="container mx-auto px-4 py-16">
+        <div className="max-w-2xl mx-auto">
+          <Card className="border-4 border-red-500 bg-white">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl mb-2 text-black">Get The Guides</CardTitle>
+              <CardDescription className="text-lg text-gray-700">The Manual + 7 Specialized Guides</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="text-center">
+                <div className="text-5xl font-bold mb-2 text-black">£197</div>
+                <p className="text-gray-700">One-time payment. Lifetime access.</p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="h-4 w-4 !text-black" />
+                  </div>
+                  <span className="text-black">All 10 chapters of The Manual</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="h-4 w-4 !text-black" />
+                  </div>
+                  <span className="text-black">7 comprehensive specialized guides</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="h-4 w-4 !text-black" />
+                  </div>
+                  <span className="text-black">Lifetime updates and additions</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="h-4 w-4 !text-black" />
+                  </div>
+                  <span className="text-black">Instant digital access</span>
+                </div>
+              </div>
+
+              <CheckoutButton productId="2" price={197} />
+
+              <p className="text-sm text-center text-gray-700">
+                Secure payment via Stripe. Questions?{" "}
+                <Link href="/contact" className="underline text-black font-medium">
+                  Contact us
+                </Link>
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </div>
+  )
+}
