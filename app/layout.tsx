@@ -20,9 +20,9 @@ const _geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Turn Sneakers into £1000+/Month | Kickcard Academy",
+  title: "Turn £100 into £1,000/Month | Kickcard Academy - Sneaker & Card Reselling",
   description:
-    "Proven system from active seller with £100K inventory. Learn sneaker & trading card authentication, sourcing from UK/EU suppliers, and scaling to £1000+/month in 30 days. No BS, just current market strategies.",
+    "Start with just £100-200. Learn sneaker & trading card reselling in 2-4 hours/week. Get supplier contacts, authentication guides, and pricing formulas. Perfect for students and full-time workers. 30-day guarantee.",
   keywords:
     "sneaker reselling UK, trading card authentication, reselling business, StockX UK, GOAT UK, eBay selling, Vinted UK, sneaker authentication, UK suppliers, EU wholesale",
   authors: [{ name: "Kickcard Academy" }],

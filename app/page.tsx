@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { CourseSchema, OrganizationSchema, ProductSchema } from "./schema"
 
 export default function LandingPage() {
   return (
@@ -65,7 +66,7 @@ export default function LandingPage() {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl">
-              Learn from someone with £20K active inventory (not another YouTube guru). Get the exact system I use to flip sneakers and cards for £8-12K monthly profit.
+              You don't need thousands to start. I'll show you how to turn £100-200 into consistent £1,000+ monthly income—even if you're working full-time and have just 2-4 hours per week.
             </p>
 
             <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 max-w-2xl">
@@ -96,7 +97,7 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/courses/the-manual">
                 <Button size="lg" className="text-lg px-8">
-                  Buy Now — £97
+                  Start Your £100 to £1,000 Journey — £97
                 </Button>
               </Link>
               <Link href="/courses/the-manual">
@@ -148,7 +149,7 @@ export default function LandingPage() {
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Link href="/courses/the-manual" className="flex-1">
                   <Button size="lg" variant="secondary" className="w-full">
-                    Get The Manual - £97
+                    Start Your Journey — £97
                   </Button>
                 </Link>
                 <Link href="/courses/the-guides" className="flex-1">
@@ -798,6 +799,11 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+      
+      {/* SEO Schema Markup */}
+      <CourseSchema />
+      <OrganizationSchema />
+      <ProductSchema />
     </div>
   )
 }
