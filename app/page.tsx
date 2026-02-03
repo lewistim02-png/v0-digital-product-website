@@ -1271,7 +1271,7 @@ export default function LandingPage() {
                 <CardContent className="pt-6 text-center">
                   <Badge className="mb-2">POPULAR</Badge>
                   <h3 className="text-2xl font-bold mb-4">The Guides</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">£197</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-6">£347</div>
                   <Link href="/courses/the-guides">
                     <Button className="w-full">Get Started</Button>
                   </Link>

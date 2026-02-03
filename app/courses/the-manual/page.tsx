@@ -8,7 +8,7 @@ import { CourseSchema } from "@/components/course-schema"
 export const metadata: Metadata = {
   title: "The Manual - Complete UK Reselling Foundation | Kickcard Academy",
   description:
-    "Master the fundamentals of UK sneaker and trading card reselling. 156-page comprehensive manual. £397 one-time payment.",
+    "Master the fundamentals of UK sneaker and trading card reselling. 156-page comprehensive manual. £197 one-time payment.",
   openGraph: {
     title: "The Manual - UK Reselling Foundation",
     description: "156-page comprehensive guide to building a profitable UK reselling business",
@@ -22,7 +22,7 @@ export default function TheManualPage() {
       <CourseSchema
         name="The Manual - UK Reselling Foundation"
         description="Master the fundamentals of UK sneaker and trading card reselling. 156-page comprehensive manual."
-        price="97"
+        price="197"
         currency="GBP"
         rating="4.9"
         reviewCount="247"
@@ -89,7 +89,7 @@ export default function TheManualPage() {
                 You're Here
               </div>
               <h3 className="text-xl font-bold text-black mb-2">The Manual</h3>
-              <div className="text-3xl font-bold text-black mb-4">£397</div>
+              <div className="text-3xl font-bold text-black mb-4">£197</div>
               <ul className="space-y-2 text-sm text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">✓</span>
@@ -121,7 +121,7 @@ export default function TheManualPage() {
                 Most Popular
               </div>
               <h3 className="text-xl font-bold text-black mb-2">The Guides</h3>
-              <div className="text-3xl font-bold text-red-500 mb-4">£397</div>
+              <div className="text-3xl font-bold text-red-500 mb-4">£347</div>
               <ul className="space-y-2 text-sm mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">✓</span>
@@ -148,7 +148,7 @@ export default function TheManualPage() {
                 href="/courses/the-guides"
                 className="block text-center bg-red-500 text-black py-3 font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
               >
-                Upgrade & Save £397 →
+                Upgrade & Save £150 →
               </Link>
             </div>
 
